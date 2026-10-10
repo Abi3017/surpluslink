@@ -1,0 +1,26 @@
+:root {
+  --bg: #f4f6f8;
+  --card: #ffffff;
+  --text: #1f2430;
+  --muted: #6b7280;
+  --border: #e3e6ec;
+  --primary: #1f7a4d;
+  --primary-soft: #e6f4ec;
+  --danger: #b42318;
+  --blue: #1e40af;
+  --blue-soft: #dbeafe;
+  --green: #166534;
+  --green-soft: #dcfce7;
+  --amber: #92400e;
+  --amber-soft: #fef3c7;
+  --red: #991b1b;
+  --red-soft: #fee2e2;
+  --grey: #4b5563;
+  --grey-soft: #e5e7eb;
+  font-family: system-ui, 'Segoe UI', Roboto, sans-serif;
+  color: var(--text);
+  background: var(--bg);
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); }
