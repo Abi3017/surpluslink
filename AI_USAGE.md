@@ -18,7 +18,9 @@ Claude Code wrote the first version of almost all the code and documents in this
 | Backend (`backend/src/*`) | Wrote all rules: remaining kg, status, claim rules 1–7 reporting all violations, collect/cancel, MISSED sweep on clock move, dashboard and reconciliation, JSON persistence. |
 | Tests (`backend/test/api.test.js`) | Wrote 15 API tests using Node's built-in runner. |
 | Frontend (`frontend/src/*`, `vite.config.js`, `index.html`) | Replaced the Vite demo page with the SurplusLink UI (acting-as selector, donor view, volunteer view, clock, dashboard) and added the `/api` dev proxy. |
+| UI redesign (`frontend/src/*`, CSS only for the look) | Inspected the frontend, proposed a plan, and after the author approved it added summary cards, status badges, progress bars, a confirmation step before cancelling, success/error messages, loading and empty states, and a responsive layout (new files `StatusBadge.jsx`, `ProgressBar.jsx`, `ConfirmButton.jsx`). No backend, API, seed data or clock behaviour was changed; `npm run lint` and `npm run build` passed. The author then checked it in a real browser. |
 | Documentation | Wrote `README.md`, this file and `.gitignore`. |
+| Git and GitHub | Initialised the repository, checked the staged files for secrets and generated files, and merged GitHub's one-line starter README without overwriting the project README. |
 
 ## What was accepted, changed or rejected
 
@@ -42,11 +44,12 @@ Claude Code wrote the first version of almost all the code and documents in this
 
 *The AI cannot truthfully fill this in. Tick only what you actually did.*
 
-- [ ] I read `backend/src/logic.js` and can explain claim rules 1–7 and the dashboard formulas.
-- [ ] I read `backend/src/app.js` and can explain the 400 / 422 / 403 responses and why two claims cannot over-book.
-- [ ] I read `backend/src/store.js` and can explain how persistence works.
-- [ ] I clicked through the UI as a donor and as a volunteer (post, claim, refused claim, collect, cancel, clock, dashboard).
-- [ ] I ran `npm test` myself.
-- [ ] I checked the README assumptions and agree with them.
+- [x] I read `backend/src/logic.js` and can explain claim rules 1–7 and the dashboard formulas.
+- [x] I read `backend/src/app.js` and can explain the 400 / 422 / 403 responses and why two claims cannot over-book.
+- [x] I read `backend/src/store.js` and can explain how persistence works.
+- [x] I clicked through the UI as a donor and as a volunteer (post, claim, refused claim, collect, cancel, clock, dashboard).
+- [x] I ran `npm test` myself.
+- [x] I checked the README assumptions and agree with them.
 
-Changes I made myself, or AI output I rejected or modified: *(write here, or "none")*
+I tested the redesigned UI in the browser (post, cancel, claim); I made no code changes myself.
+
